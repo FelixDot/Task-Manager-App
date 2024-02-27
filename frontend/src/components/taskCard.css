@@ -1,11 +1,10 @@
 
 
 .taskCardContainer{
-    background-color: #1a1a1a;
+    background-color: #588157;
     border-radius: 15px;
     max-width: 20rem;
-
-    margin: 1.5rem 0;
+    margin-bottom: 1.5rem;
 }
 
 .taskCardTitle {
@@ -41,6 +40,8 @@
 
 .dropdown-content > button{
     border-radius:  0;
+    background-color: #344e41;
+
 }
 
 .editTaskCard{
@@ -70,11 +71,11 @@
 
 .deleteModal{
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: cadetblue;
+    background-color: #A3B18A;
     max-width: 16rem;
     min-width: 4rem;
     padding: 1rem;

@@ -120,7 +120,7 @@ function App() {
     <div className="main">
     {user === null ? loginForm(): 
     <>
-      <Sidebar boards={boards} setBoards={setBoards} setBoard={setBoard} logout={handleLogout}/>
+      <Sidebar boards={boards} setBoards={setBoards} setBoard={setBoard} logout={handleLogout} user={user}/>
 
       {board && <Board board={board} setBoard={setBoard} /> }
     </>

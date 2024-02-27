@@ -1,0 +1,17 @@
+.addBoardModal{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#A3B18A;
+    width: 19rem;
+    padding: 1rem;
+    border-radius: 25px;
+    border: 3px solid white;
+}
+
+.addBoardModalButtons{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}

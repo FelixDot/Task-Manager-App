@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DeleteModal from "./DeleteModal";
 import "./taskCard.css";
 
 const TaskCard = ({ tasks, deleteTask, updateTask }) => {
@@ -37,7 +38,6 @@ const TaskCard = ({ tasks, deleteTask, updateTask }) => {
     const handleDeleteButtonClick = () => {
         setShowDeleteModal(true);
         setMenuOpen(!menuOpen);
-
     };
 
     const handleCancelDelete = () => {
@@ -113,13 +113,7 @@ const TaskCard = ({ tasks, deleteTask, updateTask }) => {
                 </div>
             )}
             {showDeleteModal && (
-                <div className="deleteModal">
-                    <p>{`Are you sure you want to delete the task: ${tasks.taskName}?`}</p>
-                    <div className="deleteModal-Buttons">
-                        <button onClick={handleDelete}>Yes</button>
-                        <button onClick={handleCancelDelete}>No</button>
-                    </div>
-                </div>
+                <DeleteModal title={tasks.taskName} handleDelete={handleDelete} handleCancelDelete={handleCancelDelete} board={false}/>
             )}
         </div>
     );

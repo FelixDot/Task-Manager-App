@@ -6,10 +6,18 @@ const TaskFrom = ({ addTask, show }) => {
     const [labels, setlabels] = useState('')
     const [priority, setPriority] = useState('Low')
     const [taskDescription, setTaskDescription] = useState('')
+    const [error, setError] = useState("")
+
 
     const handleSave = (e) => {
+
+
         e.preventDefault()
-        const labelArray = labels.split(',').map(label => label.trim());
+        if (taskName.length < 3) {
+            setError("Task name must be at least 3 characters long.")
+            return
+        }
+        const labelArray = labels.split(',').map(label => label.trim())
         console.log(labelArray)
         const taskData = {
             taskName,
@@ -29,6 +37,7 @@ const TaskFrom = ({ addTask, show }) => {
         setlabels('')
         setPriority('Low')
         setTaskDescription('')
+        setError('')
     }
     const handleCancel = () => {
         resetForm()
@@ -38,18 +47,22 @@ const TaskFrom = ({ addTask, show }) => {
         <div className="addTaskModal">
             <h5>Add new task</h5>
             <form onSubmit={handleSave} >
-                <div className="inputBlock">
-                    <label htmlFor="taskName">Task name</label>
-                    <input
-                        type="text"
-                        className="taskName"
-                        id="taskName"
-                        value={taskName}
-                        onChange={(e) => setTaskName(e.target.value)}
-                    />
+                <div>
+                {error && <p className="errorMessage">{error}</p>}
+
+                    <div className="inputBlock">
+                        <label htmlFor="taskName">Task name</label>
+
+                        <input
+                            type="text"
+                            className="taskName"
+                            id="taskName"
+                            value={taskName}
+                            onChange={(e) => setTaskName(e.target.value)}
+                        />
+                    </div>
                 </div>
                 <div className="inputBlock">
-
                     <label htmlFor="status">Status </label>
                     <select
                         className="status"

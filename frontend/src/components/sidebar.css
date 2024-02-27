@@ -1,15 +1,32 @@
 .nav {
-  flex: 1;
+  color: black;
+  flex: 0.8;
   padding: 2rem 1rem;
   border: 1px solid #1a1a1a;
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: #DAD7CD;
+  position:relative; 
 }
 ul > li {
-  margin: 1rem 0;
+  margin: 1rem;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 ul {
   list-style-type: none;
   padding: 0;
 }
+
+.removeBoardButton{
+
+}
+
+.logoutButton{
+    position: absolute;
+    bottom:   5rem;
+}
+

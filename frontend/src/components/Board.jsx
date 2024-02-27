@@ -6,7 +6,7 @@ import boardsService from "../service/boards"
 import tasksService from "../service/tasks"
 
 const Board = ({ board, setBoard }) => {
-  const [showTaskFrom, setShowTaskFrom] = useState(true);
+  const [showTaskFrom, setShowTaskFrom] = useState(false);
 
   const groupedTasked = board.tasks.reduce((acc, task) => {
     acc[task.status] = acc[task.status] || [];

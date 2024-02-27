@@ -1,9 +1,9 @@
 .addTaskModal{
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: cadetblue;
+    background-color:#A3B18A;
     max-width: 19rem;
     min-width: 4rem;
     padding: 1rem;
@@ -42,4 +42,9 @@ textarea::-webkit-scrollbar-track {
 textarea::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
+}
+.errorMessage{
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
 }

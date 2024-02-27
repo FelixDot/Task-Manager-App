@@ -1,0 +1,88 @@
+
+
+.taskCardContainer{
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    max-width: 20rem;
+
+    margin: 1.5rem 0;
+}
+
+.taskCardTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.taskCard{
+    padding: 0.5rem 2rem;
+    margin: 0;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdownbtn{
+    padding: 0px;
+    margin: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 0px; 
+}
+
+.dropdown-content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.dropdown-content > button{
+    border-radius:  0;
+}
+
+.editTaskCard{
+
+    padding: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 0;
+}
+
+.editTaskCard > input, select, textarea{
+    font-size: 1rem;
+    height: 1rem;
+    width: 100%;
+    max-width: fit-content;
+}
+
+.editTaskDescription{
+    min-height: 9rem;
+    width: fit-content;
+    resize:none;
+}
+
+
+.deleteModal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: cadetblue;
+    max-width: 16rem;
+    min-width: 4rem;
+    padding: 1rem;
+    border-radius: 25px;
+    border: 3px solid white;
+}
+.deleteModal-Buttons{
+    display: flex;
+    justify-content: center;
+    gap: 3rem
+}

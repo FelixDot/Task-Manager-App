@@ -3,8 +3,8 @@
   padding: 1rem 4rem;
   display: grid;
   gap: 0.5rem 2rem;
-
   grid-template-columns: 1fr 1fr 1fr 1fr;
+
 }
 
 .addTaskButton {
@@ -22,4 +22,19 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+
+@media only screen and (max-width: 1550px) { 
+    .boardGrid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 905px) { 
+    .boardGrid{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
 }

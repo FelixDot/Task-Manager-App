@@ -7,7 +7,7 @@ const BoardButton = ({ board, selectBoard, deleteBoard }) => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsSmallScreen(window.innerWidth < 1550); // Change 768 to your desired breakpoint for small screens
+            setIsSmallScreen(window.innerWidth < 1550); 
         };
         handleResize();
         window.addEventListener("resize", handleResize);

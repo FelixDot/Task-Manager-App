@@ -3,13 +3,13 @@
   padding: 1rem 4rem;
   display: grid;
   gap: 0.5rem 2rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
 
 }
 
-.addTaskButton {
-  height: fit-content;
-  margin: auto 0;
+.board{
+    flex: 2;
+
 }
 
 .circle {
@@ -24,8 +24,25 @@
   gap: 0.5rem;
 }
 
+.boardTitle{
+    color: black;
+    background-color: #DAD7CD;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:  0 1rem;
+}
 
 @media only screen and (max-width: 1550px) { 
+    .boardGrid{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr ;
+    }
+}
+
+
+@media only screen and (max-width: 1450px) { 
     .boardGrid{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;

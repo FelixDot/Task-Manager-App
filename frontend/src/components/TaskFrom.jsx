@@ -18,7 +18,6 @@ const TaskFrom = ({ addTask, show }) => {
             return
         }
         const labelArray = labels.split(',').map(label => label.trim())
-        console.log(labelArray)
         const taskData = {
             taskName,
             status,

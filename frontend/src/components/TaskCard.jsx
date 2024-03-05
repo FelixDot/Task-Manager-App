@@ -61,7 +61,7 @@ const TaskCard = ({ tasks, deleteTask, updateTask }) => {
                     />
                     <textarea
                         className="editTaskDescription"
-                        name="editTaskDescription"
+                        name="taskDescription"
                         value={editedTask.taskDescription}
                         onChange={handleInputChange}
                     />
